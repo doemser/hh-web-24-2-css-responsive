@@ -1,0 +1,30 @@
+:root {
+  --background-color: lightcoral;
+}
+
+section {
+  width: 300px;
+  height: 300px;
+  border: 2px solid black;
+  background: var(--background-color);
+}
+
+@media (min-width: 700px) {
+  section {
+    background: red;
+    width: 500px;
+  }
+}
+
+@media (min-width: 900px) {
+  section {
+    background: green;
+    width: 500px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: blue;
+  }
+}
